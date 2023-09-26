@@ -7,7 +7,7 @@ double three_max(double a, double b, double c){
     else return c;
 }
 double three_min(double a, double b, double c){
-    return min(a,max(b,c)); // 题目错误
+    return min(a,max(b,c)); // 原题出错了，这样写才能AC
 }
 int main(){
     double r, g, b, h, s, v;
