@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
-
 int main() {
     unsigned long long a,b,m,ans;
     cin >> a >> b >> m;
