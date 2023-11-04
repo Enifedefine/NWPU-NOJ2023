@@ -1,3 +1,5 @@
+// 样例2有问题，暂时不解
+
 #include <iostream>
 using namespace std;
 int map[305][305];
