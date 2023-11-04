@@ -4,6 +4,9 @@
         "iomanip": "cpp",
         "ostream": "cpp",
         "ios": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "__config": "cpp",
+        "optional": "cpp",
+        "variant": "cpp"
     }
 }
