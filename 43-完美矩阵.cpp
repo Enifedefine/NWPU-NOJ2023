@@ -1,4 +1,4 @@
-// Unfinished yet
+// 莫名其妙的一题，不用考虑时间复杂度，矩阵必须是方阵
 #include <iostream>
 using namespace std;
 int map[305][305];
@@ -38,12 +38,14 @@ int main() {
     int ans = 0;
     for (int n1 = 1 ; n1 <= n ; n1 ++){
         for (int m1 = 1 ; m1 <= m ; m1 ++){
-            for (int n2 = n1 + 1 ; n2 <= n ; n2 ++){
-                for (int m2 = m1 + 1 ; m2 <= m ; m2 ++){
-                    if (is_perfect(n1, m1, n2, m2)){
-                        //cout << n1 << m1 << n2 << m2 << endl;
-                        ans ++;
-                    }
+            for (int i = 1 ; ; i ++){
+                int n2 = n1 + i;
+                int m2 = m1 + i;
+                if (n2 > n || m2 > m){
+                    break;
+                }
+                if (is_perfect(n1 , m1 , n2 , m2)){
+                    ans ++;
                 }
             }
         }

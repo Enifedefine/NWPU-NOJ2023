@@ -37,24 +37,24 @@ void VolCalc(double r,double R,double h){
 } //球盖
 void VolCalc(long r,double R,double h){
     printf("%.6f\n" , (1.0/3.0)*h*(pi*r*r + pi*R*R + sqrt(pi*r*r*pi*R*R)));
-} //圆锥体
+} //圆台
 void VolCalc(double a,double b,long c){
     printf("%.6f\n" , (4.0/3.0)*pi*a*b*c);
 } //椭球体
 void VolCalc(long a,long h){
-    long long b = a*a*h/3;
-    double c = b;
-    printf("%.6f\n" , c);
+    long long ans = a*a*h/3;
+    printf("%.6f\n" , static_cast<double>(ans));
 } //四棱锥
 void VolCalc(long d1,long d2,double l){
-    double dd1 = d1;
-    double dd2 = d2;
-    double s1 = (dd1/2)*(dd1/2)*pi;
-    double s2 = (dd2/2)*(dd2/2)*pi;
+    double r1 = d1/2.0;
+    double r2 = d2/2.0;
+    double s1 = r1*r1*pi;
+    double s2 = r2*r2*pi;
     printf("%.6f\n" , (s1-s2)*l);
 } //管件
 
 int main() {
+    freopen("out.txt","w",stdout);
     long long t;
     cin >> t;
     while (t --){
