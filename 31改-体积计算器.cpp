@@ -3,7 +3,7 @@
 #include <iomanip>
 #include <math.h>
 using namespace std;
-double pi = 3.1415926;
+double pi = M_PI;
 void VolCalc(double r){
     printf("%.6f\n" , (4.0/3.0) * pi * r * r * r);
 } //球体
