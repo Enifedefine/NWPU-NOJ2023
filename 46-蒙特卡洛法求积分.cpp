@@ -1,5 +1,3 @@
-// Unfinished yet
-#include <cmath>
 #include <iostream>
 #include <cmath>
 #include <random>
@@ -29,7 +27,7 @@ int main() {
     double a , b;
     cin >> m >> a >> b >> N;
     double value = 0;
-    for (int i = 1 ; i <= N ; i ++){
+    for (int i = 1 ; i <= N - 1 ; i ++){
         //cout << a + (b-a)*((double)rand()/RAND_MAX) << " ";
         //double x = a + (b-a)*((double)rand()/RAND_MAX);
         //value += func(m , x) * (b - a);   
