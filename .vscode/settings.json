@@ -7,6 +7,8 @@
         "vector": "cpp",
         "__config": "cpp",
         "optional": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "istream": "cpp",
+        "string": "cpp"
     }
 }
