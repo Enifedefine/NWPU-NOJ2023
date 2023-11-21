@@ -6,8 +6,7 @@ bool str_endswith(string str, string suffix){
         if (str.length() - i > suffix.length()){
             break;
         }
-        if (str[i] != suffix[str.length() - i]){
-            cout << i << endl;
+        if (str[i] != suffix[suffix.length() - (str.length() - i)]){
             return false;
         }
     }
