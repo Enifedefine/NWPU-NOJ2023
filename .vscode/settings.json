@@ -11,6 +11,7 @@
         "istream": "cpp",
         "string": "cpp",
         "__locale": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "ratio": "cpp"
     }
 }
