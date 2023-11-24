@@ -1,4 +1,5 @@
-// Unfinished yet
+// WA
+
 #include <iostream>
 using namespace std;
 char CR[8][10] = {
