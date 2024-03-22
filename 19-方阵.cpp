@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 int main() {
     long long n;
@@ -7,7 +8,7 @@ int main() {
         for (long long j = i ; j > i - n ; j --){
             cout << abs(j);
             if (j != i - n + 1){
-                cout << "  ";
+                cout << " ";
             }
         }
         if (i != n - 1){
