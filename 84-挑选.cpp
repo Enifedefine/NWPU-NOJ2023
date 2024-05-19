@@ -1,15 +1,20 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-int a[10005];
-int dp[10005];
-int main(){
+const int maxn = 1e5+5;
+int c[maxn];
+long long dp[maxn];
+int main () {
     int n;
     cin >> n;
-    for (int i = 1 ; i <= n ; i ++){
-        cin >> a[i];
+    for (int i = 0 ; i < n ; i ++) {
+        int x;
+        cin >> x;
+        c[x]++;
     }
-    sort(a + 1 , a + n + 1);
-    
+    for (int i = 1 ; i < maxn ; i ++) {
+        dp[i] = max(dp[i - 2] + (i - 1) * c[i - 1] , dp[i - 1]);
+    }
+    cout << dp[maxn - 1] << endl;
     return 0;
 }
